@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Report
-from .tools import build
+from .controllers.add import *
+from .controllers.create import *
 
 # Create your views here.
 def index(request):
@@ -18,6 +19,10 @@ def index(request):
         <div>{result}
         <p>Project Listing App</p>
         </div>
-
-
     """)
+
+def login(request):
+    pass
+
+def createUser(request):
+    pass
